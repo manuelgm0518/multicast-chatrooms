@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 192.168.0.12",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
+    "@types/ip": "^1.1.0",
     "@sveltejs/vite-plugin-svelte": "^1.1.0",
     "@tsconfig/svelte": "^3.0.0",
     "autoprefixer": "^10.4.13",
@@ -24,6 +25,7 @@
   },
   "dependencies": {
     "daisyui": "^2.42.1",
+    "ip": "^1.1.8",
     "socket.io-client": "^4.5.4"
   }
 }

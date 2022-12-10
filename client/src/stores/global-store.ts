@@ -1,9 +1,10 @@
 import { get, writable } from "svelte/store";
 import { io } from "socket.io-client";
+
 import type { Message } from "../models/Message";
 
 export const messages = writable([] as Message[]);
-export const socket = io("ws://localhost:3000/");
+export const socket = io(`ws://192.168.0.12:3000/`);
 
 socket.on("chat message", (message) => {
   const lastMessage = get(messages).at(-1);

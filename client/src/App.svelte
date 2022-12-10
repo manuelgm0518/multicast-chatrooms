@@ -5,13 +5,9 @@
 
 <main class="bg-base-300 w-screen h-screen">
   <div class="container mx-auto flex flex-col h-full p-5">
-    <div class="flex-1 overflow-auto">
-      <MessageList />
-    </div>
+    <MessageList />
     <div class="divider h-0" />
-    <div>
-      <MessageBar />
-    </div>
+    <MessageBar />
   </div>
 </main>
 
